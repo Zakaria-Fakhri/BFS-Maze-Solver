@@ -5,9 +5,9 @@ def bfs(maze_graph, start_v, end_v):
     Performs a breadth-first search (BFS) to find the shortest path in an unweighted graph.
     
     Parameters:
-    maze_graph (dict): The graph represented as an adjacency list (dictionary of lists).
-    start_v (any): The starting node for the BFS.
-    end_v (any): The goal or destination node.
+    maze_graph : The graph represented as an adjacency list (dictionary of lists).
+    start_v : The starting node for the BFS.
+    end_v : The goal or destination node.
     
     Returns:
     list: The shortest path from start_v to end_v as a list of nodes. If no path is found, returns None.
