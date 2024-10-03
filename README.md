@@ -30,7 +30,7 @@ how to use it?
 3.run solve_maze.py to find the shortest path
 
 4.The output will be the shortest path from the start_node to the end_node 
-  as a list of tuppels(the tuppels represent the coordination), 
+  as a list of tuppels(the tuppels represent the coordinations), 
   or None if no path exists.
   For example (from 1. the output Will be ) :
       Shortest path in the maze: 
