@@ -1,0 +1,25 @@
+FUNCTION bfs(maze_graph, start_v, end_v):
+    INITIALIZE queue with start_v
+    INITIALIZE predecessors_dic as an empty dictionary
+    SET predecessors_dic[start_v] = None
+
+    WHILE queue is not empty:
+        SET node to the first element in queue
+        REMOVE the first element from queue
+
+        IF node equals end_v THEN:
+            INITIALIZE path as an empty list
+            SET current_node to node
+            
+            WHILE current_node is not None:
+                INSERT current_node at the beginning of path
+                SET current_node to predecessors_dic[current_node]
+
+            RETURN path  // Return the shortest path
+
+        FOR each neighbor in maze_graph[node]:
+            IF neighbor is not in predecessors_dic THEN:
+                SET predecessors_dic[neighbor] = node
+                ADD neighbor to queue
+
+    RETURN None  // No path found
