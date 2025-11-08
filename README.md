@@ -16,6 +16,7 @@ how to use it?
  where 0 is a path and 1 is a wall.
          
  For example:
+ 
   maze_matrix= [
   [0, 0, 1, 1, 1],
   [1, 0, 0, 0, 1],
